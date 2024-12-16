@@ -12,7 +12,7 @@ from PIL import Image, UnidentifiedImageError
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-i', '--id', type=str, required=True, help='User id, or a link containing it')
-parser.add_argument('-o', '--offset', type=int, default=13,
+parser.add_argument('-o', '--offset', type=int, default=0,
                     help='In the first 4 rows, a larger image will occur once every {offset} cells.'
                     'The following rows repeat this pattern. Set to 0 to disable larger images.')
 parser.add_argument('-c', '--col', type=int, default=5, help='Number of columns in the matrix')
