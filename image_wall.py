@@ -21,7 +21,7 @@ parser.add_argument('-w', '--width', type=int, default=540, help='Width of one c
 parser.add_argument('-ht', '--height', type=int, default=750, help='Height of one cell. A value less than 800 is recommended. Will be the same as cell width in music mode.')
 parser.add_argument('-rd', '--random', type=bool, default=False, help='Whether to shuffle the images')
 parser.add_argument('-rt', '--rating', type=int, default=0, help='Rating filter. Only integers between 1 (one star) and 5 (five stars) are meaningful')
-parser.add_argument('-s', '--sort-by-time', type=bool, default=False,
+parser.add_argument('-s', '--sort-by-time', type=bool, default=True,
                     help='Whether to sort chronologically (neareast first). Default is False, as default sort order is by rating.')
 parser.add_argument('-m', '--mode', type=str, default='movie', choices=['book', 'movie', 'music'], help='"movie", "music" or "book". In "music" mode, cell height will be the same as cell width.')
 parser.add_argument('-t', '--threshold', type=int, default=300,
